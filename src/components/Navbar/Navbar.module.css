@@ -1,0 +1,85 @@
+.navbar {
+  height: 5rem;
+  width: 100%;
+  box-shadow: 0 0 3px #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.logo {
+  color: #fcb900;
+  font-size: 2rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.profile {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.greeting {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.logout-button {
+  padding: 0.3rem 0.8rem;
+  background-color: #a084ca;
+  border: 2px solid #645caa;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #bface0;
+}
+
+.loading {
+  font-size: 1.5rem;
+  margin-right: 3rem;
+  animation: rotation 1s infinite linear;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (width< 648px) {
+  .burger-menu {
+    all: unset;
+  }
+
+  .profile {
+    display: none;
+  }
+}
